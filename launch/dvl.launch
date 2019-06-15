@@ -1,11 +1,5 @@
 <launch>
-    <node
-      pkg="nortek_dvl"
-      type="dvl_node"
-      name="dvl"
-      output="screen"
-      respawn="true"
-    >
+    <node pkg="nortek_dvl" type="nortek_dvl" name="dvl" output="screen" respawn="true" >
       <param name="address" type="string" value="uwrt-dvl" />
       <param name="port" type="int" value="9004" />
       <param name="dvl_rotation" type="double" value="0" />
@@ -13,3 +7,4 @@
       <param name="status_topic" type="string" value="status" />
     </node>
 </launch>
+ 
